@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/checkbox"
+    tools:context=".Activities.addTask">
+             <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+            android:id="@+id/taskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/title" />
+            <EditText
+            android:id="@+id/taskDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/details" />
+
+                 <DatePicker
+                     android:id="@+id/datePicker"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="16dp"
+                     android:datePickerMode="calendar" />
+
+                 <TimePicker
+                     android:id="@+id/timePicker"
+                     android:layout_width="match_parent"
+                     android:layout_height="100dp"
+                     android:layout_margin="16dp"
+                     android:saveEnabled="false"
+                     android:timePickerMode="spinner" />
+
+                 <Button
+                android:id="@+id/insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/save"
+                android:textColor="@color/checkbox"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </ScrollView>

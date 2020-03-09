@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/checkbox"
+    android:padding="16dp"
+    tools:context=".Activities.TaskDetails">
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/time"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="16dp"
+            android:maxLines="8"
+            android:text="Details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/isdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/done" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/edit"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/delete"
+        android:layout_height="wrap_content"
+        android:background="@color/checkbox"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/checkbox"
+        android:src="@android:drawable/ic_menu_delete" />
+</RelativeLayout>

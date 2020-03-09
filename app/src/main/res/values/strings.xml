@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Task Manager</string>
+    <string name="title">Title :</string>
+    <string name="details">Details</string>
+    <string name="notification">Notification</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="notifications">Notifications</string>
+    <string name="repeat">Repeat</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="id">id</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="today">Today</string>
+    <string name="tommorow">Tommorow</string>
+    <string name="donee">Done</string>
+    <string name="overdue">Overdue</string>
+</resources>
